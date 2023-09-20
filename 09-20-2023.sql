@@ -7,7 +7,7 @@ null = optional
 
 -- Delete table if it exists
 drop table employees cascade constraints;
-drop table transaction casecade contraints;
+drop table transactions cascade constraints;
 
 -- Create table
 create table employees (
@@ -37,9 +37,13 @@ create table transactions (
 
 -- List all tables
 --select table_name from user_tables;
-  
+
 -- Show table structure
---describe employees;
-  
+describe user_tables;
+select table_name, tablespace_name from user_tables;
+
+desc user_constraints;
+select constraint_name, constraint_type, table_name
+from user_constraints
 -- Oracle objects: tables, views, users, views, indexes, sequences, synonyms, procedures, functions, packages, triggers
 --drop view employees;
