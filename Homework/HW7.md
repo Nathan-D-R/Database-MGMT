@@ -1,8 +1,8 @@
 # 1. (1 point) Find all employees who have a job as salesman.
 ~A) select all salesman from emp;~
 **B) select empno, ename from emp where job = 'salesman';**
-~C) select Count(*) from salesman;~
-~D) select Count(*) from emp where job = 'salesman';~
+~C) select Count(\*) from salesman;~
+~D) select Count(\*) from emp where job = 'salesman';~
 
 # 2. (1 point) Find all managers who make more than 2000 dollars
 ~A) select ename from emp where job = 'MANAGER' or sal > 2000;~
@@ -17,9 +17,9 @@
 **D) All of the above**
 
 # 4. (1 point) Find those employees whose name starts with letter K
-~A) select * from emp where ename like '*K*';~
+~A) select * from emp where ename like '\*K\*';~
 ~B) select * from emp where ename like '%K%';~
-~C) select * from emp where ename like 'K*';~
+~C) select * from emp where ename like 'K\*';~
 **D) select * from emp where ename like 'K%';**
 
 # 5. (1 point) Find the department located in BOSTON in the following table: DEPT(DEPTNO, DNAME, LOC)
@@ -47,8 +47,7 @@
 ~C) recursive relationship is always optional to optional~
 ~D) columns with frequent changes in value should not be made a primary key~
 
-# 9. (1 point) What type of join is needed when you wish to include rows in the left table no matter whether
-they have matching records in the right table or not?
+# 9. (1 point) What type of join is needed when you wish to include rows in the left table no matter whether they have matching records in the right table or not?
 ~A) inner join~
 ~B) outer join~
 **C) left join**
